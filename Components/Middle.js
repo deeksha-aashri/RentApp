@@ -1,12 +1,8 @@
-
+import React from 'react'
 import  Typography  from '@mui/material/Typography'
 import Grid  from '@mui/material/Grid'
-import React from 'react'
-import Input  from '@mui/material/Input'
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import  InputLabel  from '@mui/material/InputLabel';
+import { InputUnstyled } from '@mui/base';
+
 
 
 
@@ -17,21 +13,9 @@ function Middle() {
      <Grid item>
       <Typography variant="h4" componet="h3">Search property for rent</Typography>
      </Grid>
-    <Grid item>
+    <Grid item >
      
-      <FormControl sx={{ width:"15rem"}}>
-        <InputLabel id="demo-simple-select-autowidth-label">Search by search bar...</InputLabel>
-        <Select
-         label="Search bar..."
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Twenty</MenuItem>
-          <MenuItem value={21}>Twenty one</MenuItem>
-          <MenuItem value={22}>Twenty one and a half</MenuItem>
-        </Select>
-      </FormControl>
+      <InputUnstyled sx={{border:"1px solid",borderRadius:"8px",backgroundcolor:"red"}} placeholder="Search by search bar..."></InputUnstyled>
     
      
     </Grid>

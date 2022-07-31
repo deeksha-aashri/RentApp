@@ -369,5 +369,43 @@ export const data={
     "thumbNailUrl" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAwJPPTwCUP2TlGPHl-grfZZCQ1eVh23580A&usqp=CAU",
     "tripAdvisorRating" : 4.5,
     "tripAdvisorRatingUrl" : "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-12345-4.gif"
+  },
+  {
+    "id" : "024bd61a-27e4-11e6-ad95-35ed01160df57",
+    "type" : "house",
+    "name" : "The Chirp",
+    "created" : 1464777092593,
+    "modified" : 1464871217352,
+    "address1" : "190 5th Ave",
+    "airportCode" : "SEA",
+    "amenityMask" : 7806977,
+    "city" : "Manhattan",
+    "confidenceRating" : 5,
+    "countryCode" : "US",
+    "deepLink" : "http://www.travelnow.com/templates/55505/hotels/164122/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null",
+    "highRate" : 259,
+    "hotelId" : 164122,
+    "hotelInDestination" : true,
+    "hotelRating" : 4,
+    "location" : {
+      "latitude" : 47.61309,
+      "longitude" : -122.33788
+    },
+    "locationDescription" : "Near Pike Place Market",
+    "lowRate" : 209,
+    "metadata" : {
+      "path" : "/hotels/024bd61a-27e4-11e6-ad95-35ed01160e57"
+    },
+    "price":"$2900/month",
+    "postalCode" : 98101,
+    "propertyCategory" : 1,
+    "proximityDistance" : 11.335604,
+    "proximityUnit" : "MI",
+    "rateCurrencyCode" : "USD",
+    "shortDescription" : "With a stay at The Westin Seattle, you'll be centrally laocated in Seattle, steps from Westlake Center and minutes from Pacific Place. This 4-star hotel is close to",
+    "stateProvinceCode" : "WA",
+    "thumbNailUrl" : "https://images.pexels.com/photos/1031593/pexels-photo-1031593.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "tripAdvisorRating" : 4,
+    "tripAdvisorRatingUrl" : "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-12345-4.gif"
   }]
   }

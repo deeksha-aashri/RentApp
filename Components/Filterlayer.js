@@ -1,17 +1,21 @@
-import React, { useState } from 'react'
-import { useContext } from 'react';
+import React from 'react'
+
 import Paper from '@mui/material/Paper'
 import ButtonGroup from '@mui/material/ButtonGroup'
 import Button from '@mui/material/Button'
-import { MenuItem, Select, FormControl, FormHelperText, InputLabel, NativeSelect } from '@mui/material'
-import Box from '@mui/material/Box';
+import {  FormControl,  InputLabel, NativeSelect } from '@mui/material'
+
 import context from './Context';
 import { data } from './data';
 
+import BasicDatePicker from './Datepicker'
+
 function Filterlayer() {
     let result = data["hotels"];
-    let typearr = ["hotel", "house"]
-    const type = useContext(context);
+    let typearr = ["hotel", "house"];
+    let priceRangeArr=["Less than $500","Less than $1000","Less than $1500","More than $1500"]
+   
+    
     return (
 
         <Paper variant="outlined" elevation={3} sx={{ marginY: "2rem", height: "4rem" }} >
@@ -38,21 +42,7 @@ function Filterlayer() {
                 </FormControl>
 
 
-                <FormControl >
-                    <InputLabel variant="standard" htmlFor="uncontrolled-native">
-                        When
-                    </InputLabel>
-                    <NativeSelect
-                        
-                        inputProps={{
-                            name: 'age',
-                            id: 'uncontrolled-native',
-                        }}
-                    >
-                        <option value={10}></option>
-
-                    </NativeSelect>
-                </FormControl>
+                <BasicDatePicker/>
 
                 <FormControl >
                     <InputLabel variant="standard" htmlFor="uncontrolled-native">
@@ -65,16 +55,11 @@ function Filterlayer() {
                             id: 'uncontrolled-native',
                         }}
                     >
-                       {result.map((obj)=>{
-                        (obj["price"].slice(1,4))<500?
-                        (
-                            <option>Less than $500</option>
-                        )
-                        :
-                        (
-                            <option>More than 500</option>
-                        )
-                       })}
+                       {priceRangeArr.map((obj)=>(
+                        <option>{obj}</option>
+                       )
+                       
+                       )}
                     </NativeSelect>
                 </FormControl>
 
@@ -90,10 +75,10 @@ function Filterlayer() {
                         }}
                     >
                         {
-                            result.map((obj)=>(
-                                obj.type=="house"?
+                            typearr.map((ele)=>(
+                                ele=="house"?
                                 (
-                                    <option>House</option>
+                                    <option >House</option>
                                 )
                                 :
                                 (

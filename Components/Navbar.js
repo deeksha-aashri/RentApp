@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Toolbar, ButtonGroup } from '@mui/material';
+import { Button, Toolbar} from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Grid from '@mui/material/Grid';
 import OtherHousesIcon from '@mui/icons-material/OtherHouses';
@@ -7,7 +7,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Typography from '@mui/material/Typography';
 function Navbar() {
   return (
-    <AppBar sx={{ backgroundColor: "white" }} position="stick"y>
+    <AppBar sx={{ backgroundColor: "white" }} position="sticky">
       <Toolbar>
         <Grid container>
          

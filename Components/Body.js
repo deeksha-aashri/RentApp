@@ -1,23 +1,24 @@
-import React, { useEffect } from 'react'
+import React, {  useContext }  from 'react'
 import { useState } from 'react';
 import {data} from './data'
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import FavoriteBorderTwoToneIcon from '@mui/icons-material/FavoriteBorderTwoTone';
 import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
-import { useContext } from 'react';
 import Divider from '@mui/material/Divider';
 import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import DinnerDiningIcon from '@mui/icons-material/DinnerDining';
+import context from './Context';
+
 function Body() {
    
     let result=data["hotels"]; //[{},{},{}]
     const [card,setCard]=useState(result);
+    const typeOfProperty=useContext(context);
   return (
     <>
     {card.map((obj)=>(

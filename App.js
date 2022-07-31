@@ -12,12 +12,12 @@ import {data} from './Components/data';
 import { useState } from 'react';
 
 function App() {
-  const [type,setType]=useState("house");
+  const [typeOfProperty,setTypeOfProperty]=useState("house");
   return (
     <>
     <Navbar/>
     <Container>
-      <context.Provider value={type}>
+      <context.Provider value={typeOfProperty}>
     <Middle/>
     <Filterlayer/>
     <Grid container spacing={5}>
